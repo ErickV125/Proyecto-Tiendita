@@ -27,7 +27,7 @@ class CreateProduct { //Establece el contenido de un producto
 		}
 		if (ImgeLength < 6) {
 			for (let i = 0; i < (6 - ImgeLength); i++) {
-				this.IMG.push("Default.webp");
+				this.IMG.push("Iconos/Default.webp");
 			}
 		}
 	}

@@ -51,7 +51,7 @@ function Car() {
 	new CreateDom('div', 'CardOneSetting', '', 'Seccion-menu', '').Create().Child(new CreateDom("h1","","Carrito"));
 	/*'h1', '', 'Carrito'*/
 	if (Products_in_Car.length === 0) {
-		new CreateDom('img', 'DefaultCar-img', '', 'Seccion-menu').Create().NewAttribute({ src: "/Iconos/carrito-de-compras  .png" });
+		new CreateDom('img', 'DefaultCar-img', '', 'Seccion-menu').Create().NewAttribute({ src: "Iconos/carrito-de-compras  .png" });
 		new CreateDom('div', 'DefaultCar', '', 'Seccion-menu', 'DefaultCar').Create();
 		new CreateDom('h4', '', 'Tu carrito está vacío en este momento.\n', "DefaultCar").Create().Child(new CreateDom("span","","\n !Agrega algunos productos para empezar a comprar¡")).Events("click", function() {
 			crear(product);
@@ -125,30 +125,30 @@ function settings() {
 	let card2 = new CreateDom("div", "card0", "", SCE.Element, "")
 		.Create()
 		.Events("click", handleClick);
-	new CreateDom("img", "", "", card2, "").Create().NewAttribute({ src: "/Iconos/bolsa-de-la-compra (1).png" });
+	new CreateDom("img", "", "", card2, "").Create().NewAttribute({ src: "Iconos/bolsa-de-la-compra (1).png" });
 	new CreateDom("h3", "", "Mis Compras", card2).Create();
 
 	let card3 = new CreateDom("div", "card0", "", SCE.Element, "")
 		.Create()
 		.Events("click", handleClick);
-	new CreateDom("img", "", "", card3, "").Create().NewAttribute({ src: "/Iconos/reloj.png" });
+	new CreateDom("img", "", "", card3, "").Create().NewAttribute({ src: "Iconos/reloj.png" });
 	new CreateDom("h3", "", "Historial", card3).Create();
 
 	let card4 = new CreateDom("div", "card0", "", SCE.Element, "")
 		.Create()
 		.Events("click", handleClick);
-	new CreateDom("img", "", "", card4, "").Create().NewAttribute({ src: "/Iconos/notificacion.png" });
+	new CreateDom("img", "", "", card4, "").Create().NewAttribute({ src: "Iconos/notificacion.png" });
 	new CreateDom("h3", "", "Notificaciones", card4).Create();
 
 	let card5 = new CreateDom("div", "card0", "", SCE.Element, "")
 		.Create()
 		.Events("click", handleClick);
-	new CreateDom("img", "", "", card5, "").Create().NewAttribute({ src: "/Iconos/cepillo-de-pintura.png" });
+	new CreateDom("img", "", "", card5, "").Create().NewAttribute({ src: "Iconos/cepillo-de-pintura.png" });
 	new CreateDom("h3", "", "Temas", card5).Create();
 
 	let card6 = new CreateDom("div", "card0", "", SCE.Element, "")
 		.Create()
 		.Events("click", handleClick);
-	new CreateDom("img", "", "", card6, "").Create().NewAttribute({ src: "/Iconos/centro-de-llamadas.png" });
+	new CreateDom("img", "", "", card6, "").Create().NewAttribute({ src: "Iconos/centro-de-llamadas.png" });
 	new CreateDom("h3", "", "Soporte", card6).Create();
 }
