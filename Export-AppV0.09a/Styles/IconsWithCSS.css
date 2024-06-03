@@ -1,0 +1,120 @@
+.Icon-S{
+    position: relative;
+    width: 16px;
+    height: 16px;
+    border-radius: 100px;
+    overflow: visible;
+    transition: all 250ms;
+}
+.Icon-S::after{
+    content:"";
+    position: absolute;
+    top: 75%;
+    left: 75%;
+    transform: translate(-50%,-50%) rotateZ(45deg);
+    width: 19px;
+    height: 3px;
+    border-radius: 100px;
+    background: #FFFFFF;
+    transition: all 250ms;
+}
+.Icon-S::before{
+    content:"";
+    position: absolute;
+    top: 40%;
+    left: 40%;
+    transform: translate(-50%,-50%) rotateZ(45deg);
+    width: 16px;
+    height: 16px;
+    border-radius: 100px;
+    background: #FFFFFF;/*8B8B8C*/
+    transition: all 250ms;
+}
+.Icon-S.animated::before{
+    position: relative;
+    width: 20px;
+    height: 2px;
+    border-radius: 0;
+    background: transparent;
+    overflow: visible;
+}
+.Icon-S.animated::after{
+    content:"";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%) rotateZ(90deg);
+    width: 25px;
+    height: 2px;
+    border-radius: 0;
+    background: var(--color2);
+}
+.Icon-S.animated{
+    content:"";
+    position: absolute;
+    
+    transform: rotateZ(-45deg);
+    width: 25px;
+    height: 2px;
+    border-radius: 0;
+    background: var(--color2);
+}
+
+
+.Icono {
+    position: relative;
+
+    bottom: 5px;
+    width: 15px;
+    height: 2px;
+    border-radius: var(--ALLR);
+    background: rgb(0, 0, 0);
+    color: black;
+    transition: all 250ms;
+}
+
+.Icono::after {
+    position: absolute;
+    top: 5px;
+    left: 0;
+    content: "";
+    width: 15px;
+    height: 2px;
+    border-radius: var(--ALLR);
+    background: rgb(0, 0, 0);
+    transition: all 250ms;
+}
+
+.Icono::before {
+
+    position: absolute;
+
+    top: 10px;
+    left: 0;
+    content: "";
+    width: 15px;
+    height: 2px;
+    border-radius: var(--ALLR);
+    background: rgb(0, 0, 0);
+    transition: all 250ms;
+}
+
+.Icono.animated {
+    transform: rotate(45deg);
+    bottom: 0px;
+    transition: all 250ms;
+}
+
+.Icono.animated::after {
+
+    opacity: 0;
+    transition: all 250ms;
+}
+
+.Icono.animated::before {
+    transform: translate(-50%, -50%) rotate(-90deg);
+    top: 50%;
+    left: 50%;
+    transition: all 250ms;
+
+}

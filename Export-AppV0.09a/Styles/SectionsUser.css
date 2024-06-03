@@ -1,0 +1,214 @@
+/* carrito */
+
+
+.DefaultCar {
+	color: var(--color3);
+	border-radius: var(--ALLR);
+	width: 100%;
+	height: auto;
+	padding: 8px;
+	gap: 8px;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	align-items: center;
+	justify-content: space-evenly;
+	text-align: center;
+	box-sizing: border-box;
+	background: var(--color6);
+	border: 1px solid var(--borderColor);
+	
+}
+
+.DefaultCar-img{
+	
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	margin: auto;
+	
+	opacity: 0.7;
+	width: 160px;
+	height: 160px;
+	filter: invert(var(--OnInvert))
+}
+
+.DefaultCar span {
+	color: var(--link1);
+}
+
+.MiniatureProduct {
+	border-radius: var(--ALLR);
+	width: 100%;
+	height: 40px;
+	background: var(--color6);
+	display: flex;
+
+	align-items: center;
+	justify-content: space-around;
+	overflow: hidden;
+	box-sizing: border-box;
+	
+
+	img {
+		width: 25px;
+		height: 25px;
+	}
+	transition:250ms all;
+}
+
+.MiniatureProduct * {
+	flex-shrink: 0;
+}
+
+.MiniatureProduct-img {
+
+	width: 35px;
+	height: 35px;
+	background: #F8F8FF;
+	border-radius: var(--ALLR);
+	box-sizing: border-box;
+	overflow: hidden;
+}
+
+.MiniatureProduct-img img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	box-sizing: border-box;
+	flex-shrink: 0;
+}
+
+.MiniatureTextZone {
+	height: auto;
+	width: 130px;
+	text-wrap: nowrap;
+	overflow: hidden;
+	color: var(--txtColor3);
+}
+
+.MiniatureTextZone>* {
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	width: auto;
+	text-align: start;
+}
+
+.Miniature-Button-zone {
+	position: relative;
+	right: 0;
+	width: auto;
+	height: 35px;
+	display: flex;
+	gap: 5px;
+	justify-content: center;
+	align-items: center;
+	font-weight: 1000;
+	font-size: x-large;
+}
+
+.Miniature-Button-zone * {
+	border: none;
+	outline: none;
+	border-radius: var(--ALLR);
+	color: var(--txtColor2);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	box-sizing: border-box;
+}
+
+.Miniature-Button-zone-button {
+
+	width: 35px;
+	height: 35px;
+	background: var(--color3);
+}
+
+.Miniature-Button-zone label {
+	width: 35px;
+	height: 35px;
+	background: var(--color1);
+}
+
+.Miniature-Button-zone label input[type="number"] {
+	position: relative;
+	width: 100%;
+	height: 1rem;
+	background: transparent;
+	padding: 0px;
+	text-align: center;
+}
+
+.CardOneSetting {
+
+	border: 1px solid var(--borderColor);
+	color: var(--txtColor3);
+
+	width: 100%;
+	height: 45px;
+	background: var(--color6);
+	border-radius: var(--ALLR);
+	display: flex;
+	align-items: center;
+	justify-content: start;
+	padding: 8px;
+	box-sizing: border-box;
+	gap: 10px;
+}
+
+.CardOneSetting img {
+	width: 30px;
+	height: 30px;
+
+}
+
+.SectionCardsOne {
+	border: 1px solid var(--borderColor);
+
+
+	color: var(--txtColor3);
+
+
+	width: 100%;
+	height: auto;
+	background: var(--color6);
+	border-radius: var(--ALLR);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: start;
+	padding: 10px;
+	box-sizing: border-box;
+	gap: 10px;
+	overflow: hidden;
+}
+
+.SectionCardsOne .card0 {
+
+	border-radius: var(--ALLR);
+	width: 100%;
+	height: 40px;
+	background: var(--color6);
+	display: flex;
+
+	align-items: center;
+	justify-content: start;
+	padding: 8px;
+	box-sizing: border-box;
+	gap: 8px;
+
+	img {
+		filter: invert(var(--OnInvert));
+		width: 25px;
+		height: 25px;
+	}
+	transition:250ms all;
+}
+
+.SectionCardsOne .card0:active{
+	background: var(--color1);
+}

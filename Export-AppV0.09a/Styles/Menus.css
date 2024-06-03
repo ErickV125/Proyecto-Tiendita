@@ -1,0 +1,263 @@
+ .Menu {
+
+
+
+        position: fixed;
+        top: 0;
+        left: 0;
+        background: rgb(49, 49, 49);
+        border-radius: var(--ALLR);
+        min-height: 35px;
+        min-width: 35px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        padding: 3px;
+        box-sizing: border-box;
+        z-index: 100;
+    }
+
+.Barra-lateral {
+    position: fixed;
+    left: 0;
+    background: var(--azul);
+    height: 100vh;
+    width: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px;
+    box-sizing: border-box;
+    z-index: 10000;
+    transition: width 250ms;
+}
+
+@media (min-width:600px) {
+    .Barra-lateral {
+        top: 0%;
+    }
+}
+
+.Barra-lateral form {
+
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 50px;
+    flex-direction: column;
+    box-sizing: border-box;
+    z-index: 10;
+    list-style: none;
+    user-select: none;
+}
+
+.Barra-lateral input[type="checkbox"]{
+
+    display: none;
+
+}
+.Barra-lateral input[type="checkbox"]:active+ .lista> .imgM{
+    opacity: 1;
+}
+
+.lista {
+    position: relative;
+    
+    height: 40px;
+    width: 40px;
+    border-radius: var(--ALLR);
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    flex-direction: column;
+    box-sizing: border-box;
+    transition: 250ms background, 300ms opacity, 250ms height, 250ms width, 600ms border-radius;
+    color: #F9F9F9;
+    padding: 0 2px;
+}
+
+
+.imgM {
+    user-select: none;
+    height: 25px;
+    width: 25px;
+    object-fit: contain;
+    opacity: 0.7;
+    filter: invert(var(--OnInvertM));
+    transition: all 250ms;
+}
+
+ 
+
+.seleccionar {
+    width: 40px;
+    height: 40px;
+    border-radius: var(--ALLR);
+    background: var(--color6);
+    transition: 250ms all;
+}
+
+
+
+.delete {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.Seccion-menu-cerrada {
+    position: fixed;
+    
+    background: var(--color1);
+    color: white;
+    border-radius: var(--ALLR);
+    height: 100vh;
+    width: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px;
+    box-sizing: border-box;
+    overflow: hidden;
+    transition: all 250ms;
+    z-index: 1000;
+    opacity: 1;
+    transform: translate(-500px);
+    overflow-y: auto;
+}
+
+.Seccion-menu-abierta {
+    opacity: 1;
+    transform: translate(0px);
+    transition: all 250ms;
+}
+
+
+
+
+
+.M-etiqueta {
+    margin: 0;
+    position: relative;
+
+}
+
+@media (max-width:600px) {
+    .Barra-lateral {
+    	
+        position: fixed;
+        left: 50%;
+        bottom: 0px !important;
+        transform: translateX(-50%);
+        
+        border-radius:var(--ALLR);
+        height: 50px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: start;
+        flex-direction: row;
+        box-sizing: border-box;
+        padding: 0;
+        box-sizing: border-box;
+        z-index: 10000;
+        transition: none;
+        border-top: 1px solid var(--color6-5);
+        
+    }
+
+    .Barra-lateral form {
+        width: 100%;
+        height: auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        gap: 10px;
+
+        flex-direction: row;
+        box-sizing: border-box;
+        z-index: 10;
+        list-style: none;
+        border-radius: var(--ALLR);
+        
+    }
+
+    .seleccionar {
+        
+        width: 100px;
+        height: 35px;
+        justify-content: space-evenly;
+    }
+
+    
+    
+
+    .lista p {
+        display: flex;
+        
+        color: var(--txtColor);
+        font-weight: bold;
+        font-size: small;
+    }
+
+    .seleccionar p {
+        position: relative;
+        left: 0;
+    }
+
+    .Barra-lateral::before {
+        display: none;
+    }
+
+
+
+    
+
+
+    
+
+    .fot {
+        width: 95vw;
+    }
+
+    .Buscador-input {
+        width: 100%;
+    }
+
+    .Seccion-menu-cerrada {
+        
+        border: 0px solid ;
+        position: fixed;
+        top: 0;left: 0;
+        transform: translateY(100vh);
+        height: 100vh;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: start;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        padding: 5px;
+        row-gap: 18px;
+        box-sizing: border-box;
+        transition: all 0ms;
+        z-index: 1000;
+        overflow-y: auto;
+        flex-shrink: 0;
+        color: #000;
+        border-radius: 0;
+    }
+
+    .Seccion-menu-abierta {
+        transform: translateY(0%);
+        animation: slide-up 0.45s  both;
+        
+    }
+
+}

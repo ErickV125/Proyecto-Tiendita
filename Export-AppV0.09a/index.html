@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+
+	<link rel="stylesheet" href="Styles/style.css">
+	<link rel="stylesheet" href="Styles/productStyle.css">
+	<link rel="stylesheet" href="Styles/ProducPreviw.css">
+	<link rel="stylesheet" href="Styles/Menus.css">
+	<link rel="stylesheet" href="Styles/SectionsUser.css">
+	<link rel="stylesheet" href="Styles/IconsWithCSS.css">
+	<link rel="stylesheet" href="Styles/buscador.css">
+
+</head>
+
+<body onload="crear(product);let Scroll=Section.scrollTop;
+    SaveHistory({Event:'Home',Scroll:Scroll},'#Home');">
+	<main>
+		<section class="Contain-Products" id="Contain-Products">
+
+		</section>
+		<nav class="Seccion-menu-cerrada" id="Seccion-menu">
+		</nav>
+
+
+
+		<nav class="Buscador-div" id="div-principal">
+			<form action="" style="width: 100%;position: relative;" id="Form-input-s">
+				<input disabled type="search" class="Buscador-input" placeholder="buscar" id="buscador">
+				<nav class="Buscador-etiquetas" id="Buscador-sugerencias">
+					<div class="Buscador-etiquetas" id="Buscador-etiquetas">
+						<ul id="Tags-F">
+						</ul>
+					</div>
+					<ul id="Buscador-lista">
+					</ul>
+				</nav>
+
+			</form>
+			<form action="">
+				<div>
+					<div class="NoChecked" id="Div-b-i">
+						<div class="Btn-inp" title="Etiquetas"><img src="Iconos/filter.png" class="imgM" id="OnTag"></div>
+					</div>
+					<input type="checkbox" class="Checkbox-inputs" id="Checkbox-inputs" name="Checkbox-inputs">
+					<label for="Checkbox-inputs" class="Btn-inp" id="">
+						<div class="Icon-S" id="Icon-s"></div>
+					</label>
+				</div>
+
+			</form>
+
+			
+
+		</nav>
+		<div class="Notification" id="Notification">
+			<div class="Box-N-decoration"><img src="/Iconos/notificacion.png" >
+				
+			</div>
+
+
+			<h4 id="Notification_P"></h4>
+		</div>
+		<!-- <footer class="footer"></footer> -->
+		<nav class="Barra-lateral">
+			<form id="Menu">
+				<input type="checkbox" value="Cuenta" name="option" id="cuenta">
+				<label class="lista" title="Cuenta" for="cuenta"><img class="imgM" src="Iconos/agregar-usuario.png">
+					<p>Cuenta</p></label>
+
+				<input type="checkbox" value="ajustes" name="option" id="ajustes">
+				<label class="lista" title="Ajustes" for="ajustes"><img class="imgM" src="Iconos/ajustes.png">
+					<p>Ajustes</p></label>
+
+				<input type="checkbox" value="Inicio" name="option" id="inicio">
+				<label class="lista" title="Inicio" for="inicio"><img class="imgM" src="Iconos/home.png">
+					<p>Inicio</p></label>
+
+				<input type="checkbox" value="Carro" name="option" id="carro">
+				<label class="lista" title="Carro" id="carro-boton" for="carro"><img class="imgM" src="Iconos/carrito-de-compras.png">
+					<p>Carro</p></label>
+
+				<input type="checkbox" value="AgregarProducto" name="option" id="agregarProducto">
+				<label class="lista" title="Agregar producto" for="agregarProducto">
+					<img class="imgM" src="Iconos/agregar.png">
+					<p>Añadir</p>
+					</label>
+
+			</form>
+		</nav>
+
+	</main>
+	<script src="ScriptsJs/ErrorManager/ErrorManager.js">
+		/ScriptsJs/ErrorManager / ErrorManager.js
+	</script>
+	<script src="ScriptsJs/CoreScripts/Funciones.js"></script>
+	<script src="ScriptsJs/user/User.js"></script>
+	<script src="ScriptsJs/Products/Products.js"></script>
+	<script src="ScriptsJs/Products/DataBase-Products.js"></script>
+	<script src="ScriptsJs/others/Menus.js"></script>
+	<script src="ScriptsJs/search/MetodoDeBusqueda.js"></script>
+	<script src="ScriptsJs/search/Buscador.js"></script>
+	<script src="ScriptsJs/search/Etiquetas.js"></script>
+	<script src="ScriptsJs/others/Notificacion.js"></script>
+	<script src="ScriptsJs/CoreScripts/History.js"></script>
+
+</body>
+
+</html>
