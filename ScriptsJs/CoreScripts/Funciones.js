@@ -1,4 +1,4 @@
-console.log(window)
+let Page=1;
 class CreateDom{
     //Forma de crear contenido html de forma sencilla y directa
     //Pd: console.logs deshabilitados
@@ -141,4 +141,22 @@ function Screen_Touch_Move(Element) {
     } 
     
     
+}
+
+function crear(ArrProducts) {
+	const fragment = document.createDocumentFragment();
+	let Products = ArrProducts;
+    let FromPage =(1-Page)*10; //pagina 1 menos la pagina actual multiplicado por el limite de productos por pagina
+	if (!Products) {
+		Products = product;
+	}
+	Section.innerHTML = "";
+
+    for(let i=FromPage;i<10*Page;i++){
+        let elemento=Products[i];
+		elemento.Create();
+		fragment.appendChild(elemento.Element);
+    }
+	Section.appendChild(fragment);
+	new CreateDom("div", "WitheSpace", "", "Contain-Products").Create();
 }

@@ -1,4 +1,6 @@
-EventStore={//posibles eventos a invocar por postate
+//Creo que ya no me sirve...
+
+EventStore={
     "Home":crear,
     "ViewProduct":PreviwProduct,
     'Busqueda':(a)=>{crear(Busqueda(a));input.value=a},

@@ -221,20 +221,3 @@ function PreviwProduct(Product) { //vista previa de un producto
 }
 // Definir la media query
 // Llamar a la función manualmente la primera vez
-function crear(ArrProducts) {
-	let Products = ArrProducts;
-
-	if (!Products) {
-		Products = product;
-	}
-	Section.innerHTML = "";
-	const fragment = document.createDocumentFragment();
-	Products.forEach((product) => {
-		let elemento=product;
-		elemento.Create();
-		fragment.appendChild(elemento.Element);
-		
-	})
-	Section.appendChild(fragment);
-	new CreateDom("div", "WitheSpace", "", "Contain-Products").Create();
-}
