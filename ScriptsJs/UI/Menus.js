@@ -8,10 +8,13 @@ const Seccion_menu = document.getElementById("Seccion-menu");
 let auxElement;
 nav_menu.addEventListener("change", (event) => {
 	if (event.target.value === "Inicio") {
+		Page=1;
 		crear(product);
 		let Scroll = Section.scrollTop;
 		SaveHistory({ Event: 'Home', Scroll: Scroll }, '#Home');
 		Seccion_menu.classList.remove("Seccion-menu-abierta");
+		document.scrollingElement.scrollTop = 0;
+		Section.scrollTop = 0;
 		return;
 
 	}

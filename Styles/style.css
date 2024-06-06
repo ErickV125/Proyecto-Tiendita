@@ -245,8 +245,12 @@ main {
     color: var(--color4);
     border-radius: var(--ALLR);
     border: 1px solid var(--borderColor);
+    
 }
-
+.pagination ul li.InPage{
+    background: var(--borderColor);
+    color: var(--txtColor2);
+}
 
 
 

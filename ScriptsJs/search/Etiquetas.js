@@ -7,6 +7,7 @@ TagButton.addEventListener("click",()=>{
 });
 let tags=[];
 function tag_filtering(selected){//funcion de busqueda por etiqueta
+    Page=1;
     if(tags.includes(selected)){//algoritmo para evitar dupicacion de busqueda y/o eliminar etiqueta
         tags.splice(tags.findIndex(e=>e==selected),1);
     }else{

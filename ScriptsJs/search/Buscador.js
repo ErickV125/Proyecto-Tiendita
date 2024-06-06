@@ -20,6 +20,7 @@ function Busqueda(keyword){
     return filtred;
 }
 function ConfirmarBusqueda(){
+    Page=1;
     let Scroll=Section.scrollTop;
     SaveHistory({Event:"Busqueda",arguments:input.value,Scroll:Scroll},"#Search");
     crear(Busqueda(input.value));
